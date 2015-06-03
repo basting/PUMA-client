@@ -1,0 +1,180 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    tools:context="com.bgh.android.myfirstapp.RegisterNurseActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="@string/register_nurse_title"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000"/>
+        <!-- Name Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/usernameNurse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter username"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/registerPasswordNurse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" android:hint="Enter password"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/registerNameNurse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter your full name"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Email Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/registerEmailNurse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter your email address"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nurse ID"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/nurseRegID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter your Nurse ID"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/dobNurse" android:hint="Date of Birth"
+            android:layout_marginBottom="12dp"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sex"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/sexRadioGrpN">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/radioMaleNurse"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/radioFemaleNurse" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/phoneNurse"
+            android:layout_gravity="center_horizontal" android:hint="Enter your phone number"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Affiliated Hospital"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/affilHospital"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter your Affiliated Hospital"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnRegisterNurse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#ff6347"
+            android:onClick="registerNurse"
+            android:text="@string/btnRegisterNow"
+            android:textColor="#fff" />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:onClick="navigateToLoginActivity"
+            android:text="Login"
+            android:textColor="#228b22"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

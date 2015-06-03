@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bgh.android.myfirstapp" >
+
+    <uses-sdk android:minSdkVersion="21"/>
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <!-- android:theme="@android:style/Theme.Material" -->
+
+
+        <!-- android:theme="@style/CustomActionBarTheme" -->
+        <!-- android:theme="@android:style/Theme.Holo" -->
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CaptureActivity4Nurse"
+            android:label="@string/capture_photo"
+            android:parentActivityName=".LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bgh.android.myfirstapp.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".RegisterNurseActivity"
+            android:label="@string/title_activity_register_nurse" >
+        </activity>
+        <activity
+            android:name=".PatientHomeActivity"
+            android:label="@string/title_activity_patient_home" >
+        </activity>
+        <activity
+            android:name=".NurseHomeActivity"
+            android:label="@string/title_activity_nurse_home" >
+        </activity>
+        <activity
+            android:name=".CaptureActivity4Patient"
+            android:label="@string/title_activity_capture_activity4_patient" >
+        </activity>
+        <activity
+            android:name=".NurseMasterHomeActivity"
+            android:label="@string/title_activity_nurse_master_home" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".FeedbackListActivity"
+            android:label="@string/title_activity_feedback_list" >
+        </activity>
+        <activity
+            android:name=".FeedbackDetailsActivity"
+            android:label="@string/title_activity_feedback_details" >
+        </activity>
+    </application>
+
+</manifest>

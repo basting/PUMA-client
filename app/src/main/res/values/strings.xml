@@ -1,0 +1,66 @@
+<resources>
+    <string name="rest_service_ip">172.16.37.244</string>
+
+    <string name="app_name">PUMA</string>
+    <string name="capture_photo">Capture Photo</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+
+    <string name="action_search">Search</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">Login to PUMA</string>
+    <string name="capture_page_header_text">Capture and Send</string>
+    <string name="title_activity_register">Register Patient</string>
+    <string name="btnRegisterPatient">Register New Patient</string>
+    <string name="btnRegisterNurse">Register New Nurse</string>
+    <string name="btnRegisterNow">Register Now</string>
+    <string name="register_patient_title">New Patient Registration</string>
+    <string name="register_nurse_title">New Nurse Registration</string>
+
+    <string-array name="country_array">
+        <item>CA</item>
+        <item>US</item>
+    </string-array>
+    <string name="title_activity_register_nurse">Register Nurse</string>
+
+    <string-array name="pressure_ulcer_site_array">
+        <item>Elbow</item>
+        <item>Inner Knees</item>
+        <item>Back of Head</item>
+        <item>Back of Ears</item>
+        <item>Shoulder</item>
+        <item>Lower Back</item>
+        <item>Buttocks</item>
+        <item>Hip</item>
+        <item>Heel</item>
+        <item>Greater trochanter</item>
+    </string-array>
+
+    <string-array name="exudate_array">
+        <item>None</item>
+        <item>Light</item>
+        <item>Moderate</item>
+        <item>Heavy</item>
+    </string-array>
+
+    <string-array name="tissue_type_array">
+        <item>0 – Closed/Resurfaced</item>
+        <item>1 - Epithelial Tissue</item>
+        <item>2 - Granulation Tissue</item>
+        <item>3 - Slough</item>
+        <item>4 - Necrotic Tissue (Eschar)</item>
+    </string-array>
+    <string name="title_activity_patient_home">Patient Home page</string>
+    <string name="title_activity_nurse_home">My Patient list</string>
+    <string name="title_activity_capture_activity4_patient">Capture and Send</string>
+    <string name="title_activity_nurse_master_home">Nurse Homepage</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pref_puma_settings_page_title">PUMA Settings</string>
+    <string name="title_activity_feedback_list">Feedback List</string>
+    <string name="title_activity_feedback_details">Feedback Details</string>
+ </resources>

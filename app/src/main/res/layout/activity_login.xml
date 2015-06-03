@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    tools:context="com.bgh.android.myfirstapp.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="@string/title_activity_login"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/editTextUserNameToLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:ems="10" >
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPasswordToLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password" />
+
+       <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:onClick="loginUser"
+            android:text="Login"
+            android:textColor="#228b22"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRegisterPatient"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#ff6347"
+            android:onClick="openRegisterPatientScreen"
+            android:text="@string/btnRegisterPatient"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnRegisterNurse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#ff6347"
+            android:onClick="openRegisterNurseScreen"
+            android:text="@string/btnRegisterNurse"
+            android:textColor="#fff" />
+
+
+        <TextView
+            android:id="@+id/login_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:textColor="#e30000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

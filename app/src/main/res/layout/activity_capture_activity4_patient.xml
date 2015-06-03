@@ -1,0 +1,77 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    tools:context="com.bgh.android.myfirstapp.CaptureActivity4Patient">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <!--TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="@string/capture_page_header_text"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000"/-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture Image"
+            android:id="@+id/btnCapture4P"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#228b22"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="91dp"
+            android:layout_height="77dp"
+            android:id="@+id/imageView4Photo4P"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffd2d2d2"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Site of the Pressure ulcer"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/siteSpinner4P"
+            android:spinnerMode="dropdown"
+            android:clickable="false"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Additional Info"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/addnlInfo4P"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter more info"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send for Analysis"
+            android:id="@+id/btnSendToServer4P"
+            android:onClick="sendToServer"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#228b22"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</ScrollView>

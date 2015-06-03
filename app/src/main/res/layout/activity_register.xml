@@ -1,0 +1,229 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip"
+    tools:context="com.bgh.android.myfirstapp.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="@string/register_patient_title"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000"/>
+        <!-- Name Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter username"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" android:hint="Enter password"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient Name"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter full name"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Email Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter email address"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient ID"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/patientRegID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter Patient ID"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mother's Maiden Name"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/motherMaidenName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter mother's maiden name"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/dob"            android:hint="Enter date of birth"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sex"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/sexRadioGrp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/radioMale"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/radioFemale" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient Address"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:id="@+id/patientAddress" android:hint="Enter address"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Country Code"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/countryCodeSpinner"
+            android:spinnerMode="dropdown"
+            android:clickable="false"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient Phone Number"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/phone"
+            android:layout_gravity="center_horizontal" android:hint="Enter phone number"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Primary Language"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/patientLang"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter primary language"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Citizenship"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/patientcitizenShip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter citizenship country"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#ff6347"
+            android:onClick="registerPatient"
+            android:text="@string/btnRegisterNow"
+            android:textColor="#fff" />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:onClick="navigateToLoginActivity"
+            android:text="Login"
+            android:textColor="#228b22"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</ScrollView>
